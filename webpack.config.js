@@ -41,13 +41,18 @@ module.exports = (env, argv) => {
         path: argv.mode === 'development' ? niviewPath : prodPath,
         filename: 'default.html',
         template: 'src/template/main.html',
-        inject: false,
+        inject: true,
         hash: false
       }),
       new MiniCssExtractPlugin({
         filename: 'default.css',
         outputPath: argv.mode === 'development' ? niviewPath : prodPath
       })
-    ]
+    ],
+    devServer: {
+      contentBase: argv.mode === 'development' ? niviewPath : prodPath,
+      compress: true,
+      watchContentBase: true
+    }
   }
 }
