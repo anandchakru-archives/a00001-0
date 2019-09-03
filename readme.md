@@ -48,4 +48,4 @@ The mustache template to define the DOM structure of the invite.
 * Ensure you update the .src/assets/thumbnail-*.jpg files to reflect the changes.
 * Ensure the minified version is not too heavy.
 * Test the design in all different screen sizes.
-* You may use [puppeteer](https://github.com/GoogleChrome/puppeteer#usage) to automate thumbnail.
+* For thumbnail generation, use `screenshot.js`, but be aware that it is very primitive.
