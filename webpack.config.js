@@ -57,7 +57,9 @@ module.exports = (env, argv) => {
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
         'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization'
-      }
+      },
+      disableHostCheck: true, // Use only in localhost, to avoid Invalid Host/Origin header
+      https: true // https://stackoverflow.com/a/49784278
     }
   }
 }
