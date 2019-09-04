@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --mode development --watch",
+    "start": "webpack-dev-server --mode=development --progress --open-page \"https://nesign.github.io/niview\"",
     "build": "webpack --mode production",
-    "live:dev": "webpack-dev-server --mode=development --progress --open-page \"https://nesign.github.io/niview\"",
-    "thumb": "npm run live:dev && node thumbnails.js"
+    "thumb": "node thumbnails.js"
   },
   "keywords": [],
   "author": "",
