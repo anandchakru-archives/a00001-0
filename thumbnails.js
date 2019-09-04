@@ -22,7 +22,7 @@ const takeSs = (browser, id) => {
       console.log(`${id} closed.`);
     });
     await page.emulate(devices[id]);
-    await page.goto('http://localhost:4200/?iid=OEW0ue9Ki5CkFXosFtu3');
+    await page.goto('https://nesign.github.io/niview');
     console.log(`${id} done.`);
     return resolve();
   });

@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack --mode development --watch",
     "build": "webpack --mode production",
-    "live:dev": "webpack-dev-server --mode=development --progress --open-page 'default.html'"
+    "live:dev": "webpack-dev-server --mode=development --progress --open-page \"https://nesign.github.io/niview\"",
+    "thumb": "npm run live:dev && node thumbnails.js"
   },
   "keywords": [],
   "author": "",
