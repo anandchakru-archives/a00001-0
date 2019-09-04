@@ -1,3 +1,4 @@
+// # npm i -D puppeteer puppeteer-core
 const puppeteer = require('puppeteer');
 // console.log(JSON.stringify(puppeteer.devices));
 const devices = {
